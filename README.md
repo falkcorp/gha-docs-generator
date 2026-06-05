@@ -31,7 +31,7 @@ Generate all documentation with defaults:
 
 ```yaml
 - name: Generate Documentation
-  uses: jdfalk/docs-generator-action@v1
+  uses: falkcorp/gha-docs-generator@v1
   with:
     output-dir: docs/generated
 ```
@@ -40,7 +40,7 @@ Generate all documentation with defaults:
 
 ```yaml
 - name: Generate Documentation
-  uses: jdfalk/docs-generator-action@v1
+  uses: falkcorp/gha-docs-generator@v1
   with:
     source-dirs: 'scripts,src/helpers,tools'
     workflows-dir: '.github/workflows'
@@ -52,7 +52,7 @@ Generate all documentation with defaults:
 
 ```yaml
 - name: Generate API Docs
-  uses: jdfalk/docs-generator-action@v1
+  uses: falkcorp/gha-docs-generator@v1
   with:
     source-dirs: 'src'
     output-dir: docs/api
@@ -64,7 +64,7 @@ Generate all documentation with defaults:
 
 ```yaml
 - name: Generate Workflow Docs
-  uses: jdfalk/docs-generator-action@v1
+  uses: falkcorp/gha-docs-generator@v1
   with:
     workflows-dir: '.github/workflows'
     output-dir: docs/workflows
@@ -92,7 +92,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Generate API and Workflow Documentation
-        uses: jdfalk/docs-generator-action@v1
+        uses: falkcorp/gha-docs-generator@v1
         with:
           source-dirs: '.github/workflows/scripts,tools'
           workflows-dir: '.github/workflows'
@@ -317,7 +317,7 @@ jobs:
 
       - name: Generate documentation
         id: docs
-        uses: jdfalk/docs-generator-action@v1
+        uses: falkcorp/gha-docs-generator@v1
         with:
           source-dirs: 'scripts,src'
           workflows-dir: '.github/workflows'

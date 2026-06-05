@@ -55,7 +55,7 @@ integration ✅ Full README with usage examples ✅ CHANGELOG with version histo
 This action is ready to be used immediately:
 
 1. **In ghcommon**: Replace `documentation.yml` workflow to use this action
-2. **In other repos**: Reference as `@jdfalk/docs-generator-action@v1`
+2. **In other repos**: Reference as `@falkcorp/gha-docs-generator@v1`
 3. **Local development**: Use workflow-debugger to identify issues
 4. **Sync to repos**: Use `intelligent_sync_to_repos.py` from ghcommon
 
